@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Exam Portal – Free Online Tests</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1><i class="fas fa-graduation-cap"></i> School Exam Portal</h1>
+      <p>Completely free online examination system for schools. Create tests, conduct exams, auto-grade, and export results – no subscription required.</p>
+      <div class="hero-buttons">
+        <a href="teacher/login.html" class="btn btn-primary" style="background:#fff;color:#1565c0;font-weight:600;">
+          <i class="fas fa-chalkboard-teacher"></i> Teacher Login
+        </a>
+        <a href="student/login.html" class="btn btn-outline" style="border-color:#fff;color:#fff;">
+          <i class="fas fa-user-graduate"></i> Student Login
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="container">
+      <h2 class="text-center" style="font-size:1.8rem;">Why Choose This Portal?</h2>
+      <p class="text-center" style="color:var(--text-secondary);max-width:600px;margin:0 auto;">Built for real school needs using free technologies only.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-tasks"></i>
+          <h3>Multiple Question Types</h3>
+          <p>MCQ, True/False, Fill in the Blanks, Short & Long Answer with automatic grading for objective questions.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-clock"></i>
+          <h3>Timed Tests</h3>
+          <p>Set duration, auto-submit when time ends, one question at a time with navigation controls.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-file-excel"></i>
+          <h3>Excel & CSV Export</h3>
+          <p>Download complete results anytime. Marks are stored ready for Excel.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Analytics Dashboard</h3>
+          <p>Average, highest, lowest scores, recent activity and performance charts.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Fully Responsive</h3>
+          <p>Works perfectly on mobile, tablet and desktop. Dark & Light mode included.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-lock"></i>
+          <h3>Secure & Free</h3>
+          <p>Firebase Authentication + Firestore. Free tier is enough for most schools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="text-align:center;padding:30px;color:var(--text-secondary);border-top:1px solid var(--border);">
+    <p>© 2026 School Exam Portal · Built with ❤️ for teachers · 100% Free</p>
+  </footer>
+
+  <script>
+    // Theme persistence
+    const saved = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', saved);
+  </script>
+</body>
+</html>
